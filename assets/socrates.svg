@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1240" width="1240" height="1240" role="img" aria-label="Socrates — Truth Over Agreement">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fd4ff"/>
+      <stop offset="100%" stop-color="#2b8bd6"/>
+    </linearGradient>
+    <style>
+      .ring { fill:none; stroke:#2b8bd6; stroke-width:2; opacity:.7; }
+      .arc-label { fill:#7fd4ff; font-family:'Helvetica Neue',Arial,sans-serif; font-size:30px; letter-spacing:10px; }
+      .node-label { fill:#cfeaff; font-family:'Helvetica Neue',Arial,sans-serif; font-size:24px; letter-spacing:3px; }
+      .box { fill:none; stroke:#2b8bd6; stroke-width:1.5; opacity:.85; }
+      .wire { stroke:#2b8bd6; stroke-width:1.2; opacity:.6; fill:none; }
+      .title { fill:#ffffff; font-family:'Helvetica Neue',Arial,sans-serif; font-size:96px; letter-spacing:26px; }
+      .tagline { fill:#7fd4ff; font-family:'Helvetica Neue',Arial,sans-serif; font-size:30px; letter-spacing:14px; }
+      .url { fill:#3f6f9e; font-family:'Helvetica Neue',Arial,sans-serif; font-size:22px; letter-spacing:10px; }
+    </style>
+  </defs>
+
+  <rect width="1240" height="1240" fill="url(#bg)"/>
+
+  <!-- outer reasoning loop -->
+  <circle class="ring" cx="620" cy="560" r="470"/>
+  <circle class="ring" cx="620" cy="560" r="430" stroke-dasharray="3 14"/>
+
+  <!-- arc labels: QUESTION / REASON / CRITIQUE -->
+  <text class="arc-label" x="620" y="120" text-anchor="middle">Q U E S T I O N</text>
+  <text class="arc-label" x="1085" y="575" text-anchor="middle" transform="rotate(90 1085 575)">R E A S O N</text>
+  <text class="arc-label" x="150" y="575" text-anchor="middle" transform="rotate(-90 150 575)">C R I T I Q U E</text>
+
+  <!-- central node cluster -->
+  <g transform="translate(620 560)">
+    <circle r="150" fill="none" stroke="url(#accent)" stroke-width="2" opacity=".5"/>
+    <g stroke="url(#accent)" stroke-width="1.4" opacity=".8">
+      <line x1="0" y1="-150" x2="120" y2="70"/>
+      <line x1="0" y1="-150" x2="-120" y2="70"/>
+      <line x1="120" y1="70" x2="-120" y2="70"/>
+      <line x1="0" y1="-150" x2="0" y2="40"/>
+      <line x1="120" y1="70" x2="0" y2="40"/>
+      <line x1="-120" y1="70" x2="0" y2="40"/>
+    </g>
+    <g fill="#7fd4ff">
+      <circle cx="0" cy="-150" r="8"/>
+      <circle cx="120" cy="70" r="8"/>
+      <circle cx="-120" cy="70" r="8"/>
+      <circle cx="0" cy="40" r="10"/>
+      <circle cx="60" cy="-40" r="5"/>
+      <circle cx="-60" cy="-40" r="5"/>
+    </g>
+  </g>
+
+  <!-- node boxes -->
+  <g>
+    <rect class="box" x="150" y="330" rx="10" width="170" height="64"/>
+    <text class="node-label" x="235" y="370" text-anchor="middle">LLM INPUT</text>
+
+    <rect class="box" x="920" y="395" rx="10" width="190" height="64"/>
+    <text class="node-label" x="1015" y="435" text-anchor="middle">EVIDENCE</text>
+
+    <rect class="box" x="900" y="520" rx="10" width="220" height="64"/>
+    <text class="node-label" x="1010" y="560" text-anchor="middle">COUNTERPOINT</text>
+
+    <rect class="box" x="150" y="740" rx="10" width="160" height="64"/>
+    <text class="node-label" x="230" y="780" text-anchor="middle">REFLECT</text>
+
+    <rect class="box" x="930" y="740" rx="10" width="190" height="64"/>
+    <text class="node-label" x="1025" y="772" text-anchor="middle">BETTER</text>
+    <text class="node-label" x="1025" y="796" text-anchor="middle">ANSWER ✓</text>
+
+    <path class="wire" d="M320 362 H440"/>
+    <path class="wire" d="M920 427 H800"/>
+    <path class="wire" d="M900 552 H800"/>
+    <path class="wire" d="M310 772 H440"/>
+    <path class="wire" d="M930 772 H800"/>
+  </g>
+
+  <!-- wordmark -->
+  <text class="title" x="620" y="1120" text-anchor="middle">SOCRATES</text>
+  <text class="tagline" x="620" y="1170" text-anchor="middle">• TRUTH OVER AGREEMENT •</text>
+  <text class="url" x="620" y="1212" text-anchor="middle">A D R I A N D U N K L E Y . N E T</text>
+</svg>
