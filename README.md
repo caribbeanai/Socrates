@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/socrates.svg" alt="Socrates — Truth Over Agreement" width="520">
+  <img src="assets/socrates.png" alt="Socrates — Truth Over Agreement" width="480">
 </p>
 
 <h1 align="center">Socrates</h1>
