@@ -4,10 +4,9 @@ Thanks for your interest in Socrates.
 
 ## Maintainership
 
-Socrates is authored and maintained solely by **Adrian Dunkley**
+Socrates is authored and maintained by **Adrian Dunkley**
 ([@caribbeanai](https://github.com/caribbeanai) · <https://adriandunkley.net>).
-He is the only contributor and the sole decision-maker on direction, scope, and
-releases.
+
 
 You are very welcome to:
 
@@ -42,13 +41,13 @@ mypy              # type-check
 
 When extending Socrates, keep faith with the method:
 
-1. **Truth over agreement** — features should make answers more honest, not
+1. **Truth over agreement** -> features should make answers more honest, not
    more agreeable.
-2. **No silent trust** — never let an unverified figure, quote, or attribution
+2. **No silent trust** -> never let an unverified figure, quote, or attribution
    be presented as confirmed.
-3. **Calibration is objective** — confidence should respond to evidence, not
+3. **Calibration is objective** -> confidence should respond to evidence, not
    tone.
-4. **Light dependencies** — the core stays dependency-free; provider SDKs are
+4. **Light dependencies** -> the core stays dependency-free; provider SDKs are
    optional extras and must be imported lazily.
-5. **Provider-agnostic** — anything stage-specific belongs in prompts or the
+5. **Provider-agnostic** -> anything stage-specific belongs in prompts or the
    engine, not in a provider.
